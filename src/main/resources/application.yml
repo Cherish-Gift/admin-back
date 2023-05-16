@@ -5,3 +5,7 @@ spring:
     user:
       name: ${ADMIN_USERNAME}
       password: ${ADMIN_PASSWORD}
+logging:
+  file:
+    name: admin.log
+    path: /home/ubuntu/admin/log
