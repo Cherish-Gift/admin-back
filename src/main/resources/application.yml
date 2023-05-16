@@ -7,5 +7,6 @@ spring:
       password: ${ADMIN_PASSWORD}
 logging:
   file:
-    name: admin.log
     path: /home/ubuntu/admin/log
+  level:
+    root: info
