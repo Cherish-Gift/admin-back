@@ -17,7 +17,7 @@ public class SecurityConfig {
     private final AdminServerProperties adminServerProperties;
 
     private static final String[] PUBLIC_WHITELIST = {
-        "/assets/**", "/login"
+        "/assets/**", "/login", "/actuator/**"
     };
 
     @Bean

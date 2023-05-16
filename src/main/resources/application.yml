@@ -5,6 +5,21 @@ spring:
     user:
       name: ${ADMIN_USERNAME}
       password: ${ADMIN_PASSWORD}
+  boot:
+    admin:
+      client:
+        url: http://localhost:6061 #admin server url
+        instance:
+          name: Cherishu Admin Server #admin UI 에서 보여질 이름 설정
+        username: ${ADMIN_USERNAME}
+        password: ${ADMIN_PASSWORD}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 logging:
   file:
     path: /home/ubuntu/admin/log
