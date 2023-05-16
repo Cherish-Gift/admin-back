@@ -1,2 +1,7 @@
 server:
   port: 6061
+spring:
+  security:
+    user:
+      name: ${ADMIN_USERNAME}
+      password: ${ADMIN_PASSWORD}
